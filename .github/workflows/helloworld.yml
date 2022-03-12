@@ -28,7 +28,7 @@ jobs:
           npm --version
           java --version
           dotnet --version
-          pythom --version
+          python --version
           nginx --version
           
             
