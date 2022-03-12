@@ -1,0 +1,17 @@
+name: Helloworld
+on: push
+jobs:
+  Printing_HelloWorld_Program: #job name
+    runs-on: windows-latest
+    steps: #stage
+       #action1
+      - name: printing hello world 
+        run: echo "hello world" 
+        #action2
+      - name: printing hello india 
+        run: echo "hello india" 
+  Printing_sumofNumbers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: sum of numbers 
+        run: echo (1+2)
