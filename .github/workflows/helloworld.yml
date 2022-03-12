@@ -35,7 +35,7 @@ jobs:
           echo "printing python version"
           python --version
   Printing_software_versions_ubuntu:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: identifying the versions_ 
         run: |
