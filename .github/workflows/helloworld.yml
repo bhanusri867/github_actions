@@ -19,17 +19,39 @@ jobs:
           var2=20
           sum=$(($var1 + $var2))
           echo $sum
-  Printing_software_versions:
+  Printing_software_versions_windows:
     runs-on: windows-latest
     steps:
-      - name: identifying the versions 
+      - name: identifying the versions_ 
         run: |
+          echo "printing node version"
           node --version
+          echo "printing npm version"
           npm --version
+          echo "printing java version"
           java --version
+          echo "printing dotnet version"
           dotnet --version
+          echo "printing python version"
           python --version
-          nginx --version
+  Printing_software_versions_ubuntu:
+    runs-on: windows-latest
+    steps:
+      - name: identifying the versions_ 
+        run: |
+          echo "printing node version"
+          node --version
+          echo "printing npm version"
+          npm --version
+          echo "printing java version"
+          java --version
+          echo "printing dotnet version"
+          dotnet --version
+          echo "printing python version"
+          python --version
+          echo "printing nginx version"
+          nginx -V 
+          
           
             
       
