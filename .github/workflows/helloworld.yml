@@ -1,4 +1,4 @@
-name: Helloworld
+name: Helloworld #workflowname 
 on: push
 jobs:
   Printing_HelloWorld_Program: #job name
@@ -14,4 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: sum of numbers 
-        run: echo (1+2)
+        run: |
+          var1=10
+          var2=20
+          sum=$(($var1 + $var2))
+          echo $sum
