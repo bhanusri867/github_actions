@@ -57,7 +57,7 @@ jobs:
       - name: identifying the processors using python command
         run: |
           import platform
-          print(platform.processors())
+          print(platform.processor())
         shell: python
   Run_Windows_Commands:
     runs-on: windows-latest
@@ -68,6 +68,7 @@ jobs:
           get_location
           echo "get location using pwd"
           pwd
+        shell: bash
           
  
       
