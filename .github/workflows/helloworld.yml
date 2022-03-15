@@ -51,6 +51,28 @@ jobs:
           python --version
           echo "printing nginx version"
           nginx -V 
+  Run_Shell_Commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: identifying the processors using python command
+        run: |
+          import platform
+          print(platform.processors())
+        shell: python
+  Run_Windows_Commands:
+    runs-on: windows-latest
+    steps:
+      - name: finding the locatiosn using powershell and bash Run_Shell_Commands
+        run: |
+          echo "get location using powershell"
+          get_location
+          echo "get location using pwd"
+          pwd
+          
+ 
+      
+
+     
           
           
             
