@@ -65,7 +65,7 @@ jobs:
       - name: finding the locatiosn using powershell and bash Run_Shell_Commands
         run: |
           echo "get location using powershell"
-          get_location
+          get-location
           echo "get location using pwd"
           pwd
         shell: bash
